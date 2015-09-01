@@ -1,0 +1,107 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+// Colors
+$orange: #DE8269;
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: $orange;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 38px;
+$mainFont: 'Open Sans', sans-serif;
+$headingFont: 'Open Sans', sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #FFE79D;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+h1, h2 {
+  text-shadow: 6px 6px 0px rgba(255,255,255,0.2) !important;
+}
+
+img {
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+
+.two-column-grid {
+  display: inline-block;
+  width: 75%;
+}
+
+.two-column-grid__item {
+  position: relative;
+  width: 48%;
+  margin: 1% !important;
+  height: 8rem;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.two-column-grid__text-wrapper {
+  font-family: 'Montserrat', Impact, sans-serif !important;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba($orange, .75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.two-column-grid__text {
+
+}
+
+.barca-logo {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  opacity: .1;
+  border: 0 !important;
+}

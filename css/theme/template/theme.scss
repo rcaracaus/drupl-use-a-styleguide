@@ -165,8 +165,6 @@ body {
 	line-height: 1.2em;
 
 	word-wrap: break-word;
-
-	box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
 }
 .reveal code {
 	font-family: monospace;
@@ -178,8 +176,9 @@ body {
 	overflow: auto;
 	max-height: 400px;
 	word-wrap: normal;
-	background: #3F3F3F;
 	color: #DCDCDC;
+  background: hsl(30, 20%, 25%);
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
 }
 
 .reveal table {
